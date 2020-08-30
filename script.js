@@ -1,0 +1,70 @@
+console.log("Hello all");
+// Event Listener for button
+$("button").on("click", function (event) {
+        event.preventDefault();
+        var APIKey = "b7224a3320e1c0e1ae22fd2c9b341469";
+        var search = $("#search").val();
+        // api.openweathermap.org/data/2.5/forecast?q={city name}&appid={your api key}
+        var queryURL = "https://api.openweathermap.org/data/2.5/forecast?q=" + search + "&appid=" + APIKey;
+        var uvindex = "https://api.openweathermap.org/data/2.5/uvi?appid=" + APIKey + "&lat={lat}&lon={lon}";
+        // console.log(uvindex);
+        // console.log(search);
+
+        // ajax call to OpenWeatherMap
+        $.ajax({
+                url: queryURL, uvindex,
+                method: "GET"
+                //Store all of the retrieved data inside of an object called "response"
+        })
+                .then(function (response) {
+                        // Logging the queryURL
+                        console.log(queryURL);
+                        // Logging the queryURL
+                        console.log(uvindex);
+                        // Logging the resultin response
+                        console.log(response);
+
+                        // Transferring content to HTML
+
+                        $(".city").html("<h1>" + response.city.name + "</h1>");
+                        $(".date").html("Date:" + response.list[0].dt_txt);
+                        $(".wind").text("Wind Speed:" + response.list[0].wind.speed);
+                        $(".humidity").text("Humidity:" + response.list[0].main.humidity);
+                        $(".temperature").text("Temperature(K):" + response.list[0].main.temp);
+                        $(".uvindex").text("uvIndex:" + response.list[0].uvindex);
+
+                        $(".city1").html("<h1>" + response.city.name + "</h1>");
+                        $(".date1").html("Date:" + response.list[1].dt_txt);
+                        $(".wind1").text("Wind Speed:" + response.list[1].wind.speed);
+                        $(".humidity1").text("Humidity:" + response.list[1].main.humidity);
+                        $(".temperature1").text("Temperature(K):" + response.list[1].main.temp);
+
+                        $(".city2").html("<h1>" + response.city.name + "</h1>");
+                        $(".date2").html("Date:" + response.list[2].dt_txt);
+                        $(".wind2").text("Wind Speed:" + response.list[2].wind.speed);
+                        $(".humidity2").text("Humidity:" + response.list[2].main.humidity);
+                        $(".temperature2").text("Temperature(K):" + response.list[2].main.temp);
+
+
+                        $(".city3").html("<h1>" + response.city.name + "</h1>");
+                        $(".date3").html("Date:" + response.list[3].dt_txt);
+                        $(".wind3").text("Wind Speed:" + response.list[3].wind.speed);
+                        $(".humidity3").text("Humidity:" + response.list[3].main.humidity);
+                        $(".temperature3").text("Temperature(K):" + response.list[3].main.temp);
+
+                        $(".city4").html("<h1>" + response.city.name + "</h1>");
+                        $(".date4").html("Date:" + response.list[4].dt_txt);
+                        $(".wind4").text("Wind Speed:" + response.list[4].wind.speed);
+                        $(".humidity4").text("Humidity:" + response.list[4].main.humidity);
+                        $(".temperature4").text("Temperature(K):" + response.list[4].main.temp);
+
+                        $(".city5").html("<h1>" + response.city.name + "</h1>");
+                        $(".date5").html("Date:" + response.list[5].dt_txt);
+                        $(".wind5").text("Wind Speed:" + response.list[5].wind.speed);
+                        $(".humidity5").text("Humidity:" + response.list[5].main.humidity);
+                        $(".temperature5").text("Temperature(K):" + response.list[5].main.temp);
+
+                });
+});
+
+
