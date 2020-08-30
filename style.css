@@ -45,6 +45,7 @@
     
 }
 .card{
+    font-style: italic;
     font-size: 18px;
     background-color: lightyellow;
     justify-content: space-between;
