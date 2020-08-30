@@ -1,5 +1,4 @@
 
-
 .button{
     padding: 10px;
     font-style: italic;
@@ -50,8 +49,4 @@
     justify-content: space-between;
     align-items: center;
     border: double;
-}
-
-.day1{
-
 }
