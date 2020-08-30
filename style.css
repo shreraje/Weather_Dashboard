@@ -3,7 +3,10 @@
 .button{
     padding: 10px;
     font-style: italic;
-    font-size: 15px;   
+    font-size: 20px; 
+    font-weight: bold;
+    margin: auto;
+    border-radius: 50%;  
 }
 
 .button:hover{
@@ -13,8 +16,42 @@
     border: 2px solid lightgray;
     transition: 0.3s;
 }
-/* .form{
+.history{
+    background-color: lightskyblue;
+}
+
+.city{
+    background-color: #fff;
+
+}
+.date{
+    background-color:lightblue;
+
+}
+
+.wind{
+    background-color: lightgray;
+}
+
+.humidity{
+    background-color: lightgreen;
+}
+
+.temperature{
+    background-color:orange;
+}
+
+.row{
+    justify-content: space-between;
+}
+.card{
+    font-size: 13px;
+    background-color: lightyellow;
     justify-content: space-between;
     align-items: center;
-    padding: 30px;
-} */
+    border: double;
+}
+
+.day1{
+
+}
