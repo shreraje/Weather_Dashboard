@@ -77,13 +77,13 @@ $("button").on("click", function (event) {
                         // Store last search history to local storage
 
                         function storeItem() {
-                                let lastsearch = $(".city").val();
-                                let histSearch = JSON.stringify(lastsearch);
-                                localStorage.setItem("City", histSearch);
+                                localStorage.setItem("City", search);
 
-                                // console.log(lastsearch);
+                        // Retrieve last search history from local storage
+
                         
                         }
+                        storeItem();
         });
         
 });
