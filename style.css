@@ -15,17 +15,28 @@
     border: 2px solid lightgray;
     transition: 0.3s;
 }
-.history{
+.col{
+    width: 100vw;
+    height: 50vw;
+    justify-content: space-between;
     background-color: lightskyblue;
+    text-align: center;
+    border-radius: 1.5%;
+}
+.form{
+    padding-right: 900px;
+}
+
+.search-item{
+    padding-right: 900px;
 }
 
 .city{
-    background-color: #fff;
-
+    color: Red;
+    font-weight: bolder;
 }
 .date{
     background-color:lightblue;
-
 }
 
 .wind{
@@ -48,7 +59,7 @@
     font-style: italic;
     font-size: 18px;
     background-color: lightyellow;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     align-items: center;
     border: double;
 }
