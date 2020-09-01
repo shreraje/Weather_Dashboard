@@ -1,6 +1,7 @@
 console.log("Hello all");
 // Event Listener for button
 $(document).ready(function () {
+       
         $("button").on("click", function (event) {
                 event.preventDefault();
                 var APIKey = "b7224a3320e1c0e1ae22fd2c9b341469";
@@ -74,7 +75,7 @@ $(document).ready(function () {
                         $(".temp5").text("Temperature(K):" + response.list[5].main.temp);
 
                         console.log(response.list[4].main.humidity);
-
+                        
                         // Store last search history to local storage
 
                         function storeItem() {
@@ -84,12 +85,12 @@ $(document).ready(function () {
                                 // Retrieve last search history from local storage
 
                                 let storedSearch = localStorage.getItem("City");
-                                $(".search-item").text("Last search:  " + storedSearch);
+                                $(".search-item").html(storedSearch);
                                 
                                 return;
                         }
                         storeItem();
+                        search.empty();
                 });
         });
 });
-
