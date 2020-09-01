@@ -1,11 +1,9 @@
 # 06 Server-Side APIs: Weather Dashboard
+## Objective:
+The main objective of this project is to create a simple basic weather dashboard application which can show present day weather condition and upcoming 5 days weather forcast using basic HTML, CSS, Javascript, jQuery and API of openweather.org.
 
-Developers are often tasked with retrieving data from another application's API and using it in the context of their own. Third-party APIs allow developers to access their data and functionality by making requests with specific parameters to a URL. Your challenge is to build a weather dashboard that will run in the browser and feature dynamically updated HTML and CSS.
-
-Use the [OpenWeather API](https://openweathermap.org/api) to retrieve weather data for cities. The documentation includes a section called "How to start" that will provide basic setup and usage instructions. Use `localStorage` to store any persistent data.
-
-## User Story
-
+## Experience:
+At first, API key is essential piece to develop this application which will help us to communicate with openweather.org/api to get the data of current and future weather forcast with the help of free user friendly queryURL link. "AJAX (method: GET) .then function" was used to approach and get the weather data response which were appended on the webpage. Since, I am still learning, I have used very basic HTML and CSS codes to create a framework for front-end part. All other data informations were displayed on the screen after you search any city by typing on the input form either clicking "Search" button or pressing "ENTER" key. Apart from all these, there is still a lot to improve and learn.
 
 ## Image of deployed website:
 <img width="2048" alt="Screen Shot 2020-08-30 at 11 36 48 PM" src="https://user-images.githubusercontent.com/61192734/91689945-f1b37080-eb19-11ea-8f69-24e270ace0db.png">
