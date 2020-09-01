@@ -1,11 +1,11 @@
 
 .button{
-    padding: 10px;
+    padding: 15px;
     font-style: italic;
     font-size: 20px; 
     font-weight: bold;
     margin: auto;
-    border-radius: 50%;  
+    border-radius: 30%;  
 }
 
 .button:hover{
@@ -27,8 +27,9 @@
     padding-right: 900px;
 }
 
-.search-item{
+.col-sm{
     padding-right: 900px;
+    color: purple;
 }
 
 .city{
@@ -103,5 +104,5 @@
 }
 
 .future-forcast{
-    background-color: rgb(166, 231, 231);
+    color: red;
 }
